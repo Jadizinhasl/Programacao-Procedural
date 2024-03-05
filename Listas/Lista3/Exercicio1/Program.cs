@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        const int NUMERO_HABITANTES = 3;
+        const int NUMERO_HABITANTES = 20;
         double SomatorioSalario = 0;
         int SomatorioFilhos = 0;
         double MaiorSalario = 0;
