@@ -4,32 +4,29 @@ class Program
 {
     static void Main(string[] args)
     {
-        const int NUMERO_HABITANTES = 20;
-        double SomatorioSalario = 0;
-        int SomatorioFilhos = 0;
-        double MaiorSalario = 0;
-
-        for (int contador = 1; contador <= NUMERO_HABITANTES; contador++)
-        {
-            Console.WriteLine("Digite o salário do " + contador + "° habitante:");
-            double SalarioHabitanteAtual = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite o total de fihos do " + contador + "° habitante:");
-            int FilhosHabAtual = int.Parse(Console.ReadLine());
-
-            SomatorioSalario = SomatorioSalario + SalarioHabitanteAtual;
-            SomatorioFilhos = SomatorioFilhos + FilhosHabAtual;
-
-            if (SalarioHabitanteAtual > MaiorSalario)
-            {
-                MaiorSalario = SalarioHabitanteAtual;
-            }
-        }
-        double MediaSalarial = SomatorioSalario / NUMERO_HABITANTES;
-        int MediaFilhos = SomatorioFilhos / NUMERO_HABITANTES;
-
-        Console.WriteLine("A média salarial é: R$ " + Math.Round(MediaSalarial, 2));
-        Console.WriteLine("A média do número de filhos por habitante é: " + MediaFilhos);
-        Console.WriteLine("O maior salário é de: R$ " + Math.Round(MaiorSalario, 2));
+        const int QT_NUMEROS = 10;
+		int positivo = 0;
+		int negativo = 0;
+		int zero = 0;
+			
+		for (int contador = 0; contador < QT_NUMEROS; contador++)
+		{
+			int numero = int.Parse(Console.ReadLine());
+			if (numero > 0)
+			{
+			    positvo++;
+			}
+			else if(numero < 0)
+			{
+			    negativo++;
+			}
+			else
+			{
+			    zero++;
+			}
+		}
+		Console.WriteLine("Numeros positivos:"+ positivo);
+		Console.WriteLine("Numeros negativos:"+ negativo);
+		Console.WriteLine("Zero(s):"+ zero);
     }
 }

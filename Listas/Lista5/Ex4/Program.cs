@@ -10,16 +10,16 @@ class Program
         {
             int NuInteiro = int.Parse(Console.ReadLine());
 
-            if (NuInteiro < 0)
-            {
-                break;
-            }
-            else if (NuInteiro > 0)
+            if (NuInteiro > 0)
             {
                 if (NuInteiro % 2 != 0)
                 {
                     soma += NuInteiro;
                 }
+            }
+            else if (NuInteiro < 0)
+            {
+                break;
             }
         }
         while(true);
