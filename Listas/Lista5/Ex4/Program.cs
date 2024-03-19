@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        int Soma = 0;
+        int soma = 0;
 
         do 
         {
@@ -14,10 +14,16 @@ class Program
             {
                 break;
             }
-            Soma += NuInteiro;
+            else if (NuInteiro > 0)
+            {
+                if (NuInteiro % 2 != 0)
+                {
+                    soma += NuInteiro;
+                }
+            }
         }
         while(true);
 
-        Console.WriteLine($"O somatorio de impares eh: {Soma}");
+        Console.WriteLine($"O somatorio de impares eh: {soma}");
     }
 }
