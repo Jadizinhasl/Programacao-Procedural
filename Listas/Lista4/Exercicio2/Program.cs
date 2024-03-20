@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        int alturaTriangulo = 0;
+        int alturaTriangulo;
 
         do
         {
