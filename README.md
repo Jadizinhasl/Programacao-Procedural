@@ -15,5 +15,5 @@ Neste módulo iremos estudar os fundamentos da programação de computadores. No
 11. Matrizes
 12. Olimpíada de programação
 13. Funções
-14. Manipulação de arquivos
+14. Structs
 15. Algoritmos clássicos (bubble sort, busca binária)
